@@ -12,3 +12,6 @@ The most common way to build a docker image, is with the `Dockerfile`. The `Dock
 | `ENTRYPOINT'  | allows you to configure a container that will run as an executable. This is always the first thing run when a container starts | `ENTRYPONT ["/usr/bin/run.sh"]` |
 | `VOLUME`      | a directory in the container that can be exposed outside of the container | `VOLUME ["/etc/config"]` |
 | `EXPOSE`      | exposes port number for use outside of the container | `EXPOSE 3000 8000 6543` |
+
+### Assignment
+Create an image that prints an environemnt variable to stdout
