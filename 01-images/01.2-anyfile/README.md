@@ -11,4 +11,6 @@ docker build -t workshop:01.2 -f Dockerfile.alternate $PWD
 
 ### Assignemnt
 
-Recreate The image from lesson 1 using 3 differnt operating systems ( alpine, ubuntu, arch ). You may use the docker registry to find image names / tags
+Recreate The image from lesson 1 using 3 differnt operating systems ( ubuntu, arch, alpine ). You may use the docker registry to find image names / tags
+
+*hint*: the `run` command also accepts a command to run in a container

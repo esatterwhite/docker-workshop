@@ -21,4 +21,4 @@ docker build -t workshop:01.1 $PWD
 ```
 
 ### Assignment
-Create an image that prints an environemnt variable to stdout
+Create an image using any base OS, and create a container from starting a bash prompt
