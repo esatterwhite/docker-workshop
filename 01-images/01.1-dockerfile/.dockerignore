@@ -1,0 +1,2 @@
+# much like most other *ignore files you've seen, this lists files and directories that docker should ignore during builds
+# things like logs, node_modules, .swp bower_compontents should be listed here

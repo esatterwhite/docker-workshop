@@ -4,10 +4,18 @@ Images can found on the [docker registry](https://registry.docker.com).
 
 ### Pull pull an image
 ```
-docker pull hello-world
+docker pull hello-world:latest
 ```
 
 ### Create and run a container
 ```
-docker run hello-world
+docker run hello-world:latest
 ```
+
+### Pull a redis image
+```
+docker pull redis
+```
+
+### Run redis in the background
+docker run -d redis
