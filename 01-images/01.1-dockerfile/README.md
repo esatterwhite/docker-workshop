@@ -1,6 +1,5 @@
 The most common way to build a docker image, is with the `Dockerfile`. The `Dockerfile` is used by docker by name, to specify the steps required to create the image. The most common directives found in a `Dockerfile` are:
 
-
 | Deirective    | Description   | Example |
 | ------------- |:-------------:|:--------|
 | `FROM`        | The name & tag of an image to use as the starting point for the image being built. If that image does not exist on disk, docker will download it for you | `FROM debiam:jessie` |
@@ -12,6 +11,14 @@ The most common way to build a docker image, is with the `Dockerfile`. The `Dock
 | `ENTRYPOINT'  | allows you to configure a container that will run as an executable. This is always the first thing run when a container starts | `ENTRYPONT ["/usr/bin/run.sh"]` |
 | `VOLUME`      | a directory in the container that can be exposed outside of the container | `VOLUME ["/etc/config"]` |
 | `EXPOSE`      | exposes port number for use outside of the container | `EXPOSE 3000 8000 6543` |
+
+### Building From Dockerfiles
+
+The **docker** command `build` will look for a file called `Dockerfile` in the specified location. Use the `-t` flag to name your image
+
+```
+docker build -t workshop:01.1 $PWD
+```
 
 ### Assignment
 Create an image that prints an environemnt variable to stdout
