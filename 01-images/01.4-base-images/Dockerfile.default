@@ -1,0 +1,2 @@
+FROM workshop:01.4-base
+CMD ["/usr/bin/tree", "-C", "-L", "2"]
