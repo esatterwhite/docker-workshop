@@ -7,11 +7,11 @@ Once you have a container running, there are a couple simple commands you can us
 | Command | Description | Example |
 |---------|-------------|---------|
 | `attach | Attach a container to your current terminal session | `docker attach 258b5` |
-| `logs`  | Show the logs ( stdout ) from a container | `docker logs abacd`, `docker logs -f abacd` |
-| `exec`  | attach to a container and execute a command | `docker exec abacd /bin/bash |
+| `logs`  | Show the logs ( stdout ) from a container | `docker logs abacd`, `docker logs -f 258b5` |
+| `exec`  | attach to a container and execute a command | `docker exec 258b5 /bin/bash |
 | `stop   | stops a running container | `docker start abacd` |
-| `start` | starts a previously stopped container | `docker start abacd` |
-| `restart | Stops and starts an existing container | `docker restart abacd` |
+| `start` | starts a previously stopped container | `docker start 258b5` |
+| `restart | Stops and starts an existing container | `docker restart 258b5` |
 | `rm`    | destroy ( remove ) a currently stopped container |
 | `ps`    | lists any running containers | `docker ps` |
 
