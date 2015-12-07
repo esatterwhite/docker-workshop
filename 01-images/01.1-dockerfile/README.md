@@ -16,9 +16,13 @@ The most common way to build a docker image, is with the `Dockerfile`. The `Dock
 
 The **docker** command `build` will look for a file called `Dockerfile` in the specified location. Use the `-t` flag to name your image
 
-```
+```sh
 docker build -t workshop:01.1 $PWD
 ```
 
 ### Assignment
-Create an image using any base OS, and create a container from starting a bash prompt
+Create an image using any base OS, and create a container that starts a bash prompt
+
+### TIPS: 
+* you can use the flags `-ti` to keep the container in the foreground with an interactive tty
+* The docs for all things Dockerfile can be found at (http://docs.docker.com/engine/reference/builder/)[http://docs.docker.com/engine/reference/builder/]

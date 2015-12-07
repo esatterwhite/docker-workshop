@@ -10,7 +10,8 @@ The CMD directive takes two forms, an `exec` form and a `shell` form.
 
 THe exec form takes an array of string which *must* be double quoted. THe first position is the command, everything after that is treated as parameters.
 The exec form of CMD is executed directly and does not start a subshell, and therefore no shell processing ( like variable subs ).
-```
+
+```sh
 CMD ["/bin/bash" ,"-c", "ls"]
 ```
 
@@ -18,10 +19,10 @@ CMD ["/bin/bash" ,"-c", "ls"]
 
 The Shell form invokes your command using the `sh` comand, **NOT** `bash`.
 
-```
+```sh
 CMD /bin/echo "Hello world" # actually does /bin/sh -c '/bin/echo "Hello world"' 
 ```
 
 
 ### Assignment
-Create an image where the default command pings localhost 10 times and exits
+1. Create an image where the default command pings localhost 10 times and exits

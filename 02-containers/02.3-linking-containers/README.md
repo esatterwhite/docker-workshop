@@ -17,6 +17,9 @@ docker run --link ORIGIN_NAME:TARGET_NAME image
 * update your application to connect to a redis host and store data redis
 * run a new instance of your application container with a redis container linked to it
 
+#### TIPS
+1. The `run` command accepts a `--name` flag allowing you to name each container. 
+
 Volumes
 -------
 A Volume is a way to expose a directory similar to the way a port is exposed. A Volumne is exposed using the
@@ -28,5 +31,10 @@ This can be very helpful for configuration, data files from databases / backups,
 ### Assignment 2
 
 * Update your appliation image to expose a volume at `/etc/config`
-* Run an instance of your application container reading a config file from your local computer
-  and dynamically change cut off of the counter using a config option
+* Update `index.js` to read a JSON file from the volume directory and dynamically change cut off of the counter using a config option
+* Run an instance of your application container
+* Use curl on your machine to interact with the application
+  
+### TIPS
+* `logs` will show you any output before the container crashed
+* If logs doesn't help, start it with /bin/sh instead of the default command
