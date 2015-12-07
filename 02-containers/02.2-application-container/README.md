@@ -14,6 +14,7 @@ that needs to happen. We just ship and run containers
 
 ### TIPS
 1. Use the `ADD` and `WORKDIR` directive to add the current directory into the container
+  a. http://docs.docker.com/engine/reference/builder/#workdir
 2. Be sure to install any OS and application dependancies
 3. Set the environment Variable `DEBUG` to `*`
 4. logs can be helpful for debugging
