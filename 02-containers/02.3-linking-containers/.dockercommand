@@ -1,0 +1,1 @@
+docker run -d -p 3001:3000 --name=app-1 -v $HOME/dev/docker/docker-workshop/config:/etc/config workshop:02.3
